@@ -36,6 +36,17 @@ namespace R5T.T0215.Z000
         };
 
         /// <summary>
+        /// This is the useful subset of .NET pack names that have reference data directories.
+        /// </summary>
+        public IDotnetPackName[] WithRefData => new[]
+        {
+            Instances.DotnetPackNames.Microsoft_AspNetCore_App_Ref,
+            Instances.DotnetPackNames.Microsoft_NETCore_App_Ref,
+            Instances.DotnetPackNames.Microsoft_WindowsDesktop_App_Ref,
+            Instances.DotnetPackNames.NETStandard_Library_Ref
+        };
+
+        /// <summary>
         /// This is the subset of .NET pack names used for .NET 6.
         /// </summary>
         public IDotnetPackName[] ForNet6 => new[]
